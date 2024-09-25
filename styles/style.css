@@ -16,6 +16,8 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 
 header {
@@ -23,11 +25,11 @@ header {
 }
 
 main {
-    padding: 0 10rem ;
+    padding: 0 10rem;
 }
 
 nav {
-    padding: 1.5rem 10rem ;
+    padding: 1.5rem 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,30 +99,54 @@ nav {
     display: none;
 }
 
-@media (max-width: 768px) {
-    nav {
-        position: relative;
+@media (max-width: 1300px) {
+    .navbar-menu {
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-menu {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding: 0 8rem;
     }
 
-    .navbar-menu-link::after {
-        background: #E2E8F0; 
+    nav {
+        position: relative;
+        padding: 1.5rem 8rem;
+    }
+
+    .navbar-logo {
+        font-size: 2rem;
     }
 
     .navbar-menu {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
-        height: 100vh;
-        width: 220px;
+        left: 0;
+        height: 40vh;
+        width: 94vw;
         background-color: #1E3A8A;
         flex-direction: column;
-        padding: 4rem;
-        transform: translateX(100%);
+        padding: 5rem 2rem;
+        transform: translateY(-100%);
         transition: transform 0.5s ease-in-out;
         justify-content: start;
         align-items: center;
-        gap: 5rem;
-        
+        gap: 3rem;
+        z-index: 100;
+        margin: 0;
+    }
+
+    .navbar-menu-link:hover::after {
+        transform: scaleX(0); 
+        transform-origin: left; 
     }
 
     .navbar-menu-link {
@@ -130,23 +156,72 @@ nav {
     }
 
     .navbar-hamburger {
-        display: block; 
+        display: block;
         font-size: 2rem;
         color: #E2E8F0;
     }
 
+    .navbar-close {
+        display: block;
+        font-size: 2rem;
+        color: #E2E8F0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
     .navbar-toggle:checked ~ .navbar-menu {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     .navbar-toggle:checked ~ .navbar-menu .navbar-close {
         display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px; 
-        font-size: 2rem;
-        color: #E2E8F0;
+    }
+}
 
+@media (max-width: 768px) {
+    main {
+        padding: 0 5rem;
+    }
+
+    nav {
+        position: relative;
+        padding: 1.5rem 5rem;
+    }
+    .navbar-logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar-menu {
+        padding: 4rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .navbar-menu-link {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0 2rem;
+    }
+
+    nav {
+        position: relative;
+        padding: 1.5rem 2rem;
+    }
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar-menu {
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .navbar-menu-link {
+        font-size: 1.1rem;
     }
 }
 
@@ -156,6 +231,7 @@ nav {
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    width: 100%;
 }
 
 .hero-content {
@@ -163,6 +239,9 @@ nav {
     flex-direction: column;
     gap: 10px;
     flex: 1;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .hero-content-text {
@@ -170,19 +249,24 @@ nav {
     font-weight: bold;
     margin: 0;
     margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
 }
 
 .hero-content-title-name {
     font-size: 5rem;
     font-weight: bold;
     margin: 0;
+    width: 100%;
+    text-align: left;
 }
 
 .hero-content-title {
     font-size: 4.28rem;
     font-weight: bold;
     margin: 0;
-
+    text-align: left;
+    width: 100%;
 }
 
 .hero-content-desc {
@@ -190,6 +274,8 @@ nav {
     margin: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+    text-align: left;
 }
 
 .hero-image-container {
@@ -206,6 +292,7 @@ nav {
 .hero-image-container:hover {
     transform: scale(1.05);
 }
+
 
 .gradient-img-bg {
     position: absolute;
@@ -383,6 +470,7 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    width: 100%;
 }
 
 .hero-content-cta-btn {
@@ -488,6 +576,119 @@ nav {
     transition-delay: 0.1s;
 }
 
+@media (max-width: 1200px) {
+
+    .hero-content-title-name {
+        font-size: 4rem;
+
+    }
+
+    .hero-content-title {
+        font-size: 3.5rem;
+
+    }
+
+    .hero-content-desc {
+        font-size: 1.6rem;
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content-title-name {
+        font-size: 3.5rem;
+        text-align: center;
+
+    }
+
+    .hero-content-title {
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .hero-content-desc {
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+    .hero-content-text {
+        text-align: center;
+
+    }
+
+    .hero-content-cta {
+        justify-content: center;
+    }
+
+ 
+}
+
+@media (max-width: 768px) {
+    .hero-content-title-name {
+        font-size: 2.2rem;
+    }
+
+    .hero-content-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-content-desc {
+        font-size: 1.1rem;
+    }
+
+    .hero-content-text {
+        font-size: 1.4rem;
+
+    }
+    .hero-content-cta-btn, .hero-content-cta-btn-sec {
+        font-size: 1.3rem
+    }
+
+    .hero-content-cta-btn {
+        padding: 0.8rem 0.1rem 0.8rem 3rem;
+    }
+    .hero-content-cta-btn-sec {
+        padding: 0.8rem 0.3rem 0.8rem 3rem;
+    }
+
+    .hero-content-cta-btn-sec:hover {
+        padding: 0.8rem 2rem;
+    }
+
+    .hero-content-cta-btn:hover {
+        padding: 0.8rem 2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-content-title-name {
+        font-size: 2rem;
+    }
+
+    .hero-content-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-content-desc {
+        font-size: 1.1rem;
+    }
+
+    .hero-content-cta-btn, .hero-content-cta-btn-sec {
+        font-size: 1.1rem
+    }
+
+
+}
+
 .about-me {
     position: relative;
     padding-top: 7rem;
@@ -503,12 +704,12 @@ nav {
     align-items: start;
     justify-content: center;
     gap: 6rem;
+    width: 100%;
 }
 
 .about-me-desc {
     display: flex;
     flex-direction: column;
-    height: 100%;
     flex: 1;
 }
 
@@ -521,6 +722,8 @@ nav {
     font-size: 1.62rem;
     font-weight: 600;
     margin: 0;
+    width: 100%;
+    text-align: left;
 }
 
 .base-h1 {
@@ -530,12 +733,14 @@ nav {
     margin-top: 1rem;
     margin-bottom: 1.3rem;
     line-height: 5rem;
+    text-align: left;
 }
 
 .about-me-desc-p {
     font-size: 1.28rem;
     margin: 0;
     margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .about-me-desc-skill {
@@ -674,6 +879,71 @@ nav {
     animation: liquidAnimation 8s ease-in-out infinite;
 }
 
+@media (max-width: 1024px) {
+    .about-me-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .base-h1 {
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+
+    .about-me-desc-p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        padding: 1rem 0rem;
+        gap: 3rem;
+    }
+
+    .base-h1 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        text-align: left;
+    }
+
+    .about-me-desc-p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .about-me-experience-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-gradient-shape {
+        right: -10%;
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .base-h1 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .about-me-desc-p {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+
+    .about-me-container {
+        gap: 2rem;
+    }
+
+    .about-me-experience-card {
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
 .toate {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -731,9 +1001,14 @@ nav {
     transform: scale(1.05);
 }
 
+.toate-content-item:hover .toate-content-item-icon{
+    transform: rotateY(360deg);
+}
+
 .toate-content-item-icon {
     width: 80px;
     height: auto;
+    transition: transform 0.8s;
 }
 
 .toate-content-item-p {
@@ -762,6 +1037,22 @@ nav {
     overflow: hidden;
     padding:0;
     align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1rem 0;
+}
+
+.projects-card-rev {
+    border-radius: 30px;
+    background: #1C1E26;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+    padding:0;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .projects-card-img-box, .projects-card-content {
@@ -782,11 +1073,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .projects-card-content {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -846,6 +1136,73 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .projects-card, .projects-card-rev {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .projects-card-img-box, .projects-card-content {
+        padding: 2rem;
+    }
+
+    .projects-card-content-h3 {
+        font-size: 1.4rem;
+    }
+
+    .projects-card-content-p {
+        font-size: 1.1rem;
+    }
+
+    .projects-title {
+        align-items: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-card, .projects-card-rev {
+        border-radius: 10px;
+    }
+
+    .projects-card-img-box, .projects-card-content {
+        padding: 1.5rem;
+    }
+
+    .projects-card-content-h3 {
+        font-size: 1.2rem;
+    }
+
+    .projects-card-content-p {
+        font-size: 1rem;
+    }
+
+    .projects-card-content-tags {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-card, .projects-card-rev {
+        border-radius: 5px;
+    }
+
+    .projects-card-img-box, .projects-card-content {
+        padding: 1rem;
+    }
+
+    .projects-card-content-h3 {
+        font-size: 1rem;
+    }
+
+    .projects-card-content-p {
+        font-size: 0.9rem;
+    }
+
+    .projects-card-content-tags {
+        margin-top: 1.5rem;
+    }
 }
 
 .footer {
