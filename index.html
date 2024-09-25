@@ -17,7 +17,7 @@
         <!-- Navbar -->
         <nav aria-label="main navigation bar">
             <div class="navbar-logo blue-gradient-text">
-                MCH
+                MCH.
             </div>
             <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
             <label for="navbar-toggle" class="navbar-hamburger">
@@ -38,15 +38,16 @@
                         <path d="m6 6 12 12" />
                     </svg>
                 </label>
-                <li class="navbar-menu-link"><a>Home</a></li>
-                <li class="navbar-menu-link"><a>About Me</a></li>
-                <li class="navbar-menu-link"><a>Projects</a></li>
+                <li class="navbar-menu-link"><a href="#hero">Home</a></li>
+                <li class="navbar-menu-link"><a href="#aboutme">About Me</a></li>
+                <li class="navbar-menu-link"><a href="#toate">Tools and Techs</a></li>
+                <li class="navbar-menu-link"><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-content">
                 <h6 class="hero-content-text">Welcome to My Portofolio</h6>
                 <h2 class="hero-content-title">Hi I'm</h2>
@@ -98,8 +99,9 @@
 
             </div>
         </section>
+
         <!-- About Me -->
-        <section class="about-me">
+        <section class="about-me" id="aboutme">
             <h6 class="base-h6 blue-gradient-text">ABOUT ME</h6>
             <div class="about-me-container">
                 <div class="about-me-desc">
@@ -199,7 +201,7 @@
         </section>
 
         <!-- Tools and Tech  -->
-        <section class="toate">
+        <section class="toate" id="toate">
             <div class="toate-bg"></div>
             <div class="toate-text">
                 <h6 class="base-h6">TOOLS & TECHNOLOGIES</h6>
@@ -265,7 +267,7 @@
         </section>
 
         <!-- Projects -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects-title">
                 <h6 class="base-h6 blue-gradient-text">PROJECTS</h6>
                 <h1 class="base-h1">Presenting <span class="blue-gradient-text">My Project Portofolio</span> While in
@@ -424,8 +426,32 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-container-socials">
+                <h3 class="footer-h3">Connect with Me</h3>
+                <ul class="footer-container-social-links">
+                    <li class="footer-li"><a class="footer-a" href="https://github.com/Otzzu" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li class="footer-li"><a class="footer-a" href="https://www.linkedin.com/in/mesach-harmasendro/"
+                            target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li class="footer-li"><a class="footer-a" href="https://www.instagram.com/mesach31804/"
+                            target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="footer-container-contact">
+                <h3 class="footer-h3">Contact</h3>
+                <p class="footer-p">Email: <a class="footer-a"
+                        href="mailto:your-email@example.com">mesachharmasendro@gmail.com</a></p>
+                <p class="footer-p">Phone: <a class="footer-a">+62 857 0028 7190</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom-p">&copy; 2024 Mesach Harmasendro. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 
