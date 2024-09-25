@@ -45,6 +45,8 @@ html {
 
 header {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -54,9 +56,13 @@ main {
 nav {
     padding: 1.5rem 10rem;
     display: flex;
+    width: 85.5vw;
     align-items: center;
     justify-content: space-between;
-
+    position: fixed;
+    background-color: #0D1117;
+    /* background-color: red; */
+    z-index: 10;
 }
 
 .blue-gradient-text {
@@ -140,7 +146,6 @@ nav {
     }
 
     nav {
-        position: relative;
         padding: 1.5rem 8rem;
     }
 
@@ -208,7 +213,6 @@ nav {
     }
 
     nav {
-        position: relative;
         padding: 1.5rem 5rem;
     }
     .navbar-logo {
@@ -231,7 +235,6 @@ nav {
     }
 
     nav {
-        position: relative;
         padding: 1.5rem 2rem;
     }
     .navbar-logo {
@@ -252,7 +255,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 4rem;
     width: 100%;
 }
@@ -1049,8 +1052,7 @@ nav {
     overflow: hidden;
     padding:0;
     align-items: stretch;
-    width: 100%;
-    max-width: 1000px;
+    width: 80%;
     margin: 1rem 0;
 }
 
@@ -1063,8 +1065,7 @@ nav {
     overflow: hidden;
     padding:0;
     align-items: stretch;
-    width: 100%;
-    max-width: 1100px;
+    width: 80%;
 }
 
 .projects-card-img-box, .projects-card-content {
@@ -1148,6 +1149,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.projects-title h1, .projects-title h2 {
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -1176,10 +1182,11 @@ nav {
 @media (max-width: 768px) {
     .projects-card, .projects-card-rev {
         border-radius: 10px;
+        width: 100%;
     }
 
     .projects-card-img-box, .projects-card-content {
-        padding: 1.5rem;
+        padding: 1.7rem;
     }
 
     .projects-card-content-h3 {
@@ -1193,6 +1200,10 @@ nav {
     .projects-card-content-tags {
         margin-top: 2rem;
     }
+
+    .projects-title h1, .projects-title h2 {
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1201,7 +1212,7 @@ nav {
     }
 
     .projects-card-img-box, .projects-card-content {
-        padding: 1rem;
+        padding: 1.2rem;
     }
 
     .projects-card-content-h3 {
