@@ -2,6 +2,27 @@
     font-size: 14px;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #1E3A8A, #22D3EE); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #3B82F6, #22D3EE); 
+}
+
+::-webkit-scrollbar-corner {
+    background: #0D1117;
+}
+
 body {
     background-color: #0D1117;
     flex-direction: column;
