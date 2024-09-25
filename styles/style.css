@@ -126,11 +126,11 @@ nav {
     }
 
     .navbar-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        height: 40vh;
+        height: fit-content;
         width: 94vw;
         background-color: #1E3A8A;
         flex-direction: column;
@@ -357,7 +357,7 @@ nav {
     transition: all 0.8s ease;
     position: absolute;
     width: 15%;
-    height: 15%;
+    height: auto;
     top: 24%;
     right: 13%;
     z-index: 1;
@@ -389,7 +389,7 @@ nav {
     transition: all 0.5s ease;
     position: absolute;
     width: 16%;
-    height: 16%;
+    height: auto;
     top: 32%;
     left: 7%;
     z-index: 1;
@@ -451,7 +451,7 @@ nav {
     transition: all 0.6s ease;
     position: absolute;
     width: 12%;
-    height: 12%;
+    height: auto;
     top: 12%;
     left: 30%;
     z-index: 1;
@@ -484,6 +484,7 @@ nav {
     align-items: center;
     gap: 0.8rem;
     transition: background-color 0.3s ease, padding 0.3s ease;
+    text-decoration: none;
 }
 
 .hero-content-cta-btn-icon {
@@ -604,30 +605,18 @@ nav {
 
     .hero-content-title-name {
         font-size: 3.5rem;
-        text-align: center;
 
     }
 
     .hero-content-title {
         font-size: 3rem;
-        text-align: center;
 
     }
 
     .hero-content-desc {
         font-size: 1.5rem;
-        text-align: center;
 
     }
-    .hero-content-text {
-        text-align: center;
-
-    }
-
-    .hero-content-cta {
-        justify-content: center;
-    }
-
  
 }
 
@@ -1243,6 +1232,8 @@ nav {
     color: #22D3EE; 
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 .footer-a:hover {

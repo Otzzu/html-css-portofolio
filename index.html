@@ -5,10 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesach H - Portofolio</title>
+
+    <meta name="title" content="Mesach Harmasendro - Fullstack Web Developer">
+    <meta name="description"
+        content="Welcome to the portfolio website of Mesach Harmasendro, a full-stack web developer with experience in front-end and back-end technologies including Next.js, React, Golang, and more. Explore my projects, skills, and experience.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portofolio.mesach.pro/">
+    <meta property="og:title" content="Mesach Harmasendro - Fullstack Web Developer">
+    <meta property="og:description"
+        content="Explore the portfolio of Mesach Harmasendro, showcasing projects in web development, software engineering, and more.">
+    <meta property="og:image" content="https://portofolio.mesach.pro/assets/img/og.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://portofolio.mesach.pro/">
+    <meta property="twitter:title" content="Mesach Harmasendro - Fullstack Web Developer">
+    <meta property="twitter:description"
+        content="Explore the portfolio of Mesach Harmasendro, showcasing projects in web development, software engineering, and more.">
+    <meta property="twitter:image" content="https://portofolio.mesach.pro/assets/img/og.png">
+
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -29,15 +51,18 @@
                     <line x1="4" x2="20" y1="18" y2="18" />
                 </svg>
             </label>
+
             <ul class="navbar-menu">
-                <label for="navbar-toggle" class="navbar-close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E2E8F0"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                    </svg>
-                </label>
+                <li class="navbar-close">
+                    <label for="navbar-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="#E2E8F0" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-x">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </label>
+                </li>
                 <li class="navbar-menu-link"><a href="#hero">Home</a></li>
                 <li class="navbar-menu-link"><a href="#aboutme">About Me</a></li>
                 <li class="navbar-menu-link"><a href="#toate">Tools and Techs</a></li>
@@ -67,7 +92,7 @@
                                 <path d="M20 21a8 8 0 0 0-16 0" />
                             </svg>
                         </span>
-                        </>
+
                         <a class="hero-content-cta-btn-sec" href="/assets/pdf/Mesach Harmasendro_CV.pdf" target="_blank"
                             rel="noopener noreferrer">
                             <p class="blue-gradient-text">
@@ -91,10 +116,10 @@
                     <img class="hero-image" src="/assets/img/photo.png" alt="developer photo" />
                     <div class="gradient-img-bg"></div>
                 </figure>
-                <img class="hero-img-dotnet" src="/assets/img/dotnet.png" />
-                <img class="hero-img-js" src="/assets/img/js.png" />
-                <img class="hero-img-go" src="/assets/img/go.png" />
-                <img class="hero-img-python" src="/assets/img/python.png" />
+                <img class="hero-img-dotnet" src="/assets/img/dotnet.png" alt="dotnet logo" />
+                <img class="hero-img-js" src="/assets/img/js.png" alt="js logo" />
+                <img class="hero-img-go" src="/assets/img/go.png" alt="go logo" />
+                <img class="hero-img-python" src="/assets/img/python.png" alt="python logo" />
 
 
             </div>
@@ -102,7 +127,7 @@
 
         <!-- About Me -->
         <section class="about-me" id="aboutme">
-            <h6 class="base-h6 blue-gradient-text">ABOUT ME</h6>
+            <h1 class="base-h6 blue-gradient-text">ABOUT ME</h1>
             <div class="about-me-container">
                 <div class="about-me-desc">
                     <article class="about-me-desc-text">
@@ -135,7 +160,7 @@
                     <div class="about-me-desc-skill">
                         <h1 class="base-h1">My General <span class="blue-gradient-text">Skill</span></h1>
                         <div class="about-me-desc-skill-container">
-                            <h6 class="about-me-desc-skill-container-title">Front End Web</h6>
+                            <h1 class="about-me-desc-skill-container-title">Front End Web</h1>
                             <div class="about-me-desc-skill-container-progress-bar">
                                 <div class="about-me-desc-skill-container-progress-bar-progress" style="width: 60%;">
                                 </div>
@@ -143,7 +168,7 @@
                         </div>
 
                         <div class="about-me-desc-skill-container">
-                            <h6 class="about-me-desc-skill-container-title">Back End</h6>
+                            <h1 class="about-me-desc-skill-container-title">Back End</h1>
                             <div class="about-me-desc-skill-container-progress-bar">
                                 <div class="about-me-desc-skill-container-progress-bar-progress" style="width: 80%;">
                                 </div>
@@ -159,9 +184,9 @@
                         <img loading="lazy" src="/assets/img/logo-sandbox.png" alt="SANDBOX IEEE Logo"
                             class="about-me-experience-card-logo">
                         <article class="about-me-experience-card-content">
-                            <h3 class="about-me-experience-card-content-h3">Backend Web Developer <span
+                            <h1 class="about-me-experience-card-content-h3">Backend Web Developer <span
                                     class="about-me-experience-card-content-span">- SANDBOX IEEE
-                                    ITB (Aug 2023 - Mar 2024)</span></h3>
+                                    ITB (Aug 2023 - Mar 2024)</span></h1>
                             <p class="about-me-experience-card-content-p">Developed and managed all backend aspects for
                                 the Sandbox IEEE website, including
                                 ticketing, login, voting systems, and email integration using Next.js API routes and
@@ -173,13 +198,13 @@
                         <img loading="lazy" src="/assets/img/logo-skillup.png" alt="SkillUp logo"
                             class="about-me-experience-card-logo">
                         <article class="about-me-experience-card-content">
-                            <h3 class="about-me-experience-card-content-h3">Vice Manager Web Development <span
+                            <h1 class="about-me-experience-card-content-h3">Vice Manager Web Development <span
                                     class="about-me-experience-card-content-span">- Skillup
-                                    (Jan 2024 - Present)</span></h3>
-                            <p class="about-me-experience-card-content-p">Collaborated with the manager to ensure
-                                effective division operation, assisted in all
-                                aspects
-                                of website creation and maintenance (frontend and backend).</p>
+                                    (Jan 2024 - Present)</span></h>
+                                <p class="about-me-experience-card-content-p">Collaborated with the manager to ensure
+                                    effective division operation, assisted in all
+                                    aspects
+                                    of website creation and maintenance (frontend and backend).</p>
                         </article>
                     </div>
 
@@ -187,9 +212,9 @@
                         <img loading="lazy" src="/assets/img/logo-sparta.png" alt="SPARTA logo"
                             class="about-me-experience-card-logo">
                         <article class="about-me-experience-card-content">
-                            <h3 class="about-me-experience-card-content-h3">Head of IT Division <span
+                            <h1 class="about-me-experience-card-content-h3">Head of IT Division <span
                                     class="about-me-experience-card-content-span">- SPARTA HMIF ITB
-                                    (Mei 2024 - Sept 2024)</span></h3>
+                                    (Mei 2024 - Sept 2024)</span></h1>
                             <p class="about-me-experience-card-content-p">Collaborated with the manager to ensure
                                 effective division operation, assisted in all
                                 aspects
@@ -205,9 +230,9 @@
         <section class="toate" id="toate">
             <div class="toate-bg"></div>
             <div class="toate-text">
-                <h6 class="base-h6">TOOLS & TECHNOLOGIES</h6>
-                <h1 class="base-h1">Tools and
-                    Technologies I really good at</h1>
+                <h1 class="base-h6">TOOLS & TECHNOLOGIES</h1>
+                <h2 class="base-h1">Tools and
+                    Technologies I really good at</h2>
 
             </div>
             <div class="toate-content">
@@ -274,9 +299,9 @@
         <!-- Projects -->
         <section class="projects" id="projects">
             <div class="projects-title">
-                <h6 class="base-h6 blue-gradient-text">PROJECTS</h6>
-                <h1 class="base-h1">Presenting <span class="blue-gradient-text">My Project Portofolio</span> While in
-                    University</h1>
+                <h1 class="base-h6 blue-gradient-text">PROJECTS</h1>
+                <h2 class="base-h1">Presenting <span class="blue-gradient-text">My Project Portofolio</span> While in
+                    University</h2>
             </div>
 
             <div class="projects-card">
@@ -285,9 +310,9 @@
                         src="/assets/img/visu.jpg" />
                 </figure>
                 <article class="projects-card-content">
-                    <h3 class="projects-card-content-h3">
+                    <h1 class="projects-card-content-h3">
                         VisuMatch
-                    </h3>
+                    </h1>
                     <p class="projects-card-content-p">
                         Linear Algebra and Geometry Lecture, '23 — VisuMatch is a feature-rich Content Based Image
                         Retrieval (CBIR) system, developed for ITB's Linear Algebra and Geometry Class, utilizing
@@ -307,8 +332,8 @@
                         <span class="projects-card-content-tag">TypeScript</span>
 
                     </div>
-                    <a class="projects-card-content-links" href="https://github.com/Otzzu/Algeo02-22077" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="projects-card-content-links" aria-label="github link for VisuMatch project"
+                        href="https://github.com/Otzzu/Algeo02-22077" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                             stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-external-link">
@@ -325,9 +350,9 @@
                         src="/assets/img/gopat.png" />
                 </figure>
                 <article class="projects-card-content">
-                    <h3 class="projects-card-content-h3">
+                    <h1 class="projects-card-content-h3">
                         GoPat
-                    </h3>
+                    </h1>
                     <p class="projects-card-content-p">
                         Strategy Algorithm Lecture, '24 — GoPat is a web tool that uses BFS and IDS algorithms to find
                         the
@@ -347,8 +372,9 @@
                         <span class="projects-card-content-tag">TypeScript</span>
 
                     </div>
-                    <a class="projects-card-content-links" href="https://github.com/Otzzu/Tubes2_GoPat" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="projects-card-content-links" href="https://github.com/Otzzu/Tubes2_GoPat"
+                        aria-label="github link for GoPat project" href="https://github.com/Otzzu/Algeo02-22077"
+                        target="_blank" rel="noopener norefer target=" _blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                             stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-external-link">
@@ -365,9 +391,9 @@
                         src="/assets/img/matcher.png" />
                 </figure>
                 <article class="projects-card-content">
-                    <h3 class="projects-card-content-h3">
+                    <h1 class="projects-card-content-h3">
                         Fingerprint Matcher
-                    </h3>
+                    </h1>
                     <p class="projects-card-content-p">
                         Strategy Algorithm Lecture, '24 — This project is a fingerprint matching application that
                         utilizes the Knuth-Morris-Pratt (KMP) and Boyer-Moore (BM) algorithms to search for pattern
@@ -382,7 +408,9 @@
                         <span class="projects-card-content-tag">Docker</span>
                     </div>
                     <a class="projects-card-content-links" href="https://github.com/Otzzu/Tubes3_apaKek"
-                        rel="noopener noreferrer">
+                        aria-label="github link for Fingerprint Matcher project"
+                        href="https://github.com/Otzzu/Algeo02-22077" target="_blank" rel="noopener norefer
+                        rel=" noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                             stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-external-link">
@@ -399,9 +427,9 @@
                         src="/assets/img/cyber22.png" />
                 </figure>
                 <article class="projects-card-content">
-                    <h3 class="projects-card-content-h3">
+                    <h1 class="projects-card-content-h3">
                         Cyberpunk 2077 Breach Protocol Solver
-                    </h3>
+                    </h1>
                     <p class="projects-card-content-p">
                         Strategy Algorithm Lecture, '24 — The project is a web-based and CLI application built with
                         JavaScript/TypeScript and Next.js to solve the Cyberpunk 2077 breach protocol problem using a
@@ -422,7 +450,9 @@
                         <span class="projects-card-content-tag">TypeScript</span>
                     </div>
                     <a class="projects-card-content-links" href="https://github.com/Otzzu/tucil-stima-satu"
-                        target="_blank" rel="noopener noreferrer">
+                        aria-label="github link for VCyberpunk 2077 Breach Protocol Solver project"
+                        href="https://github.com/Otzzu/Algeo02-22077" target="_blank" rel="noopener norefer
+                        target=" _blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                             stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-external-link">
@@ -438,7 +468,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-container-socials">
-                <h3 class="footer-h3">Connect with Me</h3>
+                <h1 class="footer-h3">Connect with Me</h1>
                 <ul class="footer-container-social-links">
                     <li class="footer-li"><a class="footer-a" href="https://github.com/Otzzu" target="_blank"
                             rel="noopener noreferrer">GitHub</a>
@@ -452,10 +482,9 @@
             </div>
 
             <div class="footer-container-contact">
-                <h3 class="footer-h3">Contact</h3>
-                <p class="footer-p">Email: <a class="footer-a"
-                        href="mailto:your-email@example.com">mesachharmasendro@gmail.com</a></p>
-                <p class="footer-p">Phone: <a class="footer-a">+62 857 0028 7190</a></p>
+                <h1 class="footer-h3">Contact</h1>
+                <p class="footer-p">Email: <span class="footer-a">mesachharmasendro@gmail.com</span></p>
+                <p class="footer-p">Phone: <span class="footer-a">+62 857 0028 7190</span></p>
             </div>
         </div>
         <div class="footer-bottom">
